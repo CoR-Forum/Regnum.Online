@@ -11,8 +11,7 @@ I know that there is some issue with loading images in certain zoom levels. I'll
 
 Map is served by [BunnyCDN](https://bunnycdn.com) with a small webserver for php-based spawntimes.
 
-
-
+![](https://cdn.treudler.net/shared/screenshots/2018_08_27_22-36-49_vhnqqbxZpO2rLktXOXw8.png)
 
 ### Contributers
 
