@@ -5421,7 +5421,7 @@ var Attribution = Control.extend({
 
 		// @option prefix: String = 'Leaflet'
 		// The HTML text shown before the attributions. Pass `false` to disable.
-		prefix: '<a href="mailto:webmaster@regnum.online">webmaster@regnum.online</a>'
+		prefix: '<a href="mailto:joshua-regnum@treudler.net">?</a>'
 	},
 
 	initialize: function (options) {

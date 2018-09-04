@@ -22,12 +22,11 @@
 <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
 <link rel="stylesheet" href="scripts/leaflet.awesome-markers.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-    
 </head>
 
 <body style="height:100%;">
 
-<div id ="map" style="width:100%; height:100%; background: #888888;"></div>   
+<div id ="map" style="width:100%; height:100%; background: #000000;"></div>   
    
 <script type="text/javascript">
 
@@ -62,7 +61,7 @@
   // the tile layer containing the image generated with gdal2tiles --leaflet ...
   L.tileLayer('./tiles/{z}/{x}/{y}.png', {
     noWrap: true,
-    attribution: 'Please contribute on <a href="https://github.com/Joshua2504/Regnum.Online" target="_blank">GitHub</a><br>This fully static website is powered by <a target="_blank" href="https://bunnycdn.com/">BunnyCDN</a>.<br>All times are CEST.<br>...'
+    attribution: 'Contribute on <a href="https://github.com/Joshua2504/Regnum.Online" target="_blank">GitHub</a><br>...'
   }).addTo(map)
 
   
