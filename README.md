@@ -11,7 +11,32 @@ I know that there is some issue with loading images in certain zoom levels. I'll
 
 Map is served by [BunnyCDN](https://bunnycdn.com) with a small webserver for php-based spawntimes.
 
-![](https://cdn.treudler.net/shared/screenshots/2018_08_27_22-36-49_vhnqqbxZpO2rLktXOXw8.png)
+# Plugins
+
+It is working with the following leaflet plugins:
+
+[leaflet-rastercoords](https://github.com/commenthol/leaflet-rastercoords)
+[Leaflet.awesome-markers](https://github.com/lvoogdt/Leaflet.awesome-markers)
+
+To generate the map tiles, I'm using [gdal2tiles-leaflet](https://github.com/Joshua2504/gdal2tiles-leaflet). It's a bit tricky with regnums amazing coordination system.
+
+At the moment, this is the correct script to generate the map tiles. Files can be found [here](https://drive.google.com/drive/folders/1ud_Rvriq_dqOXZfnn8cj41A2kbkirJox?usp=sharing).
+
+```
+#!/bin/bash
+
+# do NOT forget to install `python-gdal` library
+# assuming you are on a debian like OS
+#sudo apt install python-gdal
+
+# get the tool
+test ! -f gdal2tiles.py \
+  && curl https://raw.githubusercontent.com/joshua2504/gdal2tiles-leaflet/master/gdal2tiles.py \
+  > gdal2tiles.py
+# process ...
+python ./gdal2tiles.py -l -p raster -z 1-5 -w none source.png /path/to/tiles
+
+```
 
 ### Contributers
 
