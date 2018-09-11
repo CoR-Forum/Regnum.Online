@@ -189,9 +189,11 @@ var syrtis_door = L.marker(rc.unproject([2337,4065]),{icon:icon_castle}).bindToo
 var eferias = L.marker(rc.unproject([3618,4742]),{icon:icon_castle}).bindTooltip('<b>Eferias Castle</b>').openTooltip();
 var herbred = L.marker(rc.unproject([2844,3233]),{icon:icon_fort}).bindTooltip('<b>Herbred Fort</b>').openTooltip();
 var algaros = L.marker(rc.unproject([1710,3212]),{icon:icon_fort}).bindTooltip('<b>Algaros Fort</b>').openTooltip();
+var ignis_door = L.marker(rc.unproject([4153,1982]),{icon:icon_castle}).bindTooltip('<b>Ignis Door</b>').openTooltip();
 var shaanarid = L.marker(rc.unproject([4611,3145]),{icon:icon_castle}).bindTooltip('<b>Shaanarid Castle</b>').openTooltip();
 var samal = L.marker(rc.unproject([3699,2553]),{icon:icon_fort}).bindTooltip('<b>Samal Fort</b>').openTooltip();
 var menirah = L.marker(rc.unproject([3355,1811]),{icon:icon_fort}).bindTooltip('<b>Menirah Fort</b>').openTooltip();
+var alsius_door = L.marker(rc.unproject([1743,2116]),{icon:icon_castle}).bindTooltip('<b>Alsius Door</b>').openTooltip();
 var imperia = L.marker(rc.unproject([2786,1232]),{icon:icon_castle}).bindTooltip('<b>Imperia Castle</b>').openTooltip();
 var aggersborg = L.marker(rc.unproject([2692,2527]),{icon:icon_fort}).bindTooltip('<b>Aggersborg Fort</b>').openTooltip();
 var trelleborg = L.marker(rc.unproject([1626,2528]),{icon:icon_fort}).bindTooltip('<b>Trelleborg Fort</b>').openTooltip();
@@ -206,7 +208,9 @@ var shop_algaros = L.marker(rc.unproject([1455,3265]),{icon:icon_shop}).bindPopu
 var shop_eferias = L.marker(rc.unproject([3513,4156]),{icon:icon_shop}).bindPopup('<b>Jabeline (Bogner)</b>');
 var shop_herbred = L.marker(rc.unproject([2595,3464]),{icon:icon_shop}).bindPopup('<b>Janea (Merchant), Letur, Viara</b>'+'<img style= width:300px; height:200px; border:1px solid; src="https://regnummaps.b-cdn.net/images/places/shop_herb.png">');
 
+var shop_imperia = L.marker(rc.unproject([2876,1808]),{icon:icon_shop}).bindPopup('<b>Korbus</b> (Alsius Weaponsmith)');
 var shop_aggers = L.marker(rc.unproject([2378,2326]),{icon:icon_shop}).bindPopup('<b>Tria, Rotaren (Merchant), Makret</b>');
+var shop_trelle = L.marker(rc.unproject([1290,2752]),{icon:icon_shop}).bindPopup('<b>Asgaris (Zauberer), Grethor (Bogner), Bramar (Merchant)</b>');
   
 // CRAFTING NPCs
 
@@ -215,7 +219,8 @@ var lulia = L.marker(rc.unproject([1169.92,2075.06]),{icon:icon_crafting_npc}).b
 var osthan = L.marker(rc.unproject([950.11,1323.02]),{icon:icon_crafting_npc}).bindTooltip('<b>Osthan</b> (Craftmaster)').openTooltip();
 var tuldor = L.marker(rc.unproject([156.02,2049.79]),{icon:icon_crafting_npc}).bindTooltip('<b>Tuldor</b> (Craftmaster)').openTooltip();
 var eadmar_bronzearm = L.marker(rc.unproject([2424.12,4372.50]),{icon:icon_crafting_npc}).bindTooltip('<b>Eadmer Bronzearm</b> (Craftmaster)').openTooltip();
-
+var lodrut = L.marker(rc.unproject([2642,1219]),{icon:icon_crafting_npc}).bindTooltip('<b>Lodrut</b> (Craftmaster)').openTooltip();
+	
 // NPCs
 
 var asgeir = L.marker(rc.unproject([904.76,1326.65]),{icon:icon_npc}).bindTooltip('<b>Asgeir</b> (Clan Notary)').openTooltip();
@@ -224,7 +229,6 @@ var dalmora = L.marker(rc.unproject([2936.81,2887.72]),{icon:icon_npc}).bindTool
 var dardanus_shadowhawk = L.marker(rc.unproject([3494.86,3476.51]),{icon:icon_npc}).bindTooltip('<b>Dardanus Shadowhawk</b> (Merchant)').openTooltip();
 var eric_vantassle = L.marker(rc.unproject([312.12,1859.17]),{icon:icon_npc}).bindTooltip('<b>Eric Vantassle</b> (Weaponsmith)').openTooltip();
 var igna_myneely = L.marker(rc.unproject([4308.97,6048.77]),{icon:icon_npc}).bindTooltip('<b>Igna McNeely</b> (Neutral Denizen)').openTooltip();
-var korbus = L.marker(rc.unproject([2876,1808]),{icon:icon_npc}).bindTooltip('<b>Korbus</b> (Alsius Weaponsmith)').openTooltip();
 var laranda_shadowhawk = L.marker(rc.unproject([2197,5468]),{icon:icon_npc}).bindTooltip('<b>Laranda Shadowhawk</b> (Denizen)').openTooltip();
 var malaguy = L.marker(rc.unproject([2359.52,5578.16]),{icon:icon_npc}).bindTooltip('<b>Malaguy</b> (Denizen)').openTooltip();
 var melarak = L.marker(rc.unproject([2395,4672]),{icon:icon_npc}).bindTooltip('<b>Melarak</b> (Herbalist)').openTooltip();
@@ -452,10 +456,10 @@ var sight_island_1 = L.marker(rc.unproject([4295,6072]),{icon:icon_sight_island_
 
 var lg_sight = L.layerGroup([sight_ignis_1,sight_island_1,sight_syrtis_ir_ruins_13,sight_syrtis_ir_boat_3,sight_syrtis_ir_ruins_12,sight_syrtis_ir_ruins_11,sight_syrtis_ir_ruins_10,sight_syrtis_ir_ruins_9,sight_syrtis_ir_ruins_8,sight_syrtis_ir_woodmountain,sight_syrtis_ir_ruins_7_graveyard,sight_syrtis_ir_ruins_7_graveyard_tomb,sight_syrtis_ir_ruins_6_graveyard,sight_syrtis_ir_ruins_5,sight_syrtis_ir_ruins_2,sight_syrtis_ir_ruins_3,sight_syrtis_ir_ruins_4,sight_syrtis_ir_ruins_1,sight_syrtis_ir_windmill_1,sight_syrtis_ir_windmill_2,sight_syrtis_ir_boat_1,sight_syrtis_ir_boat_2,sight_syrtis_ir_mount_goblin,sight_syrtis_ir_emerald_hills,sight_ship,sight_alsius_ir_ruins_21,sight_alsius_ruins_3,sight_alsius_ruins_5,sight_alsius_ruins_4_camp,sight_alsius_ir_ruins_21_camp,sight_alsius_ruins_2,sight_alsius_ir_ruins_22,sight_alsius_ruins_1,sight_alsius_ir_sword_hand,sight_alsius_ir_ruins_3,sight_alsius_ir_ruins_19,sight_alsius_ir_ruins_20,sight_alsius_ir_ruins_13,sight_alsius_ir_ruins_18,sight_alsius_ir_ruins_14,sight_alsius_ir_ruins_15,sight_alsius_ir_ruins_16,sight_alsius_ir_ruins_17,sight_alsius_ir_ruins_18_camp,sight_alsius_ir_ruins_19_camp,sight_alsius_ir_ruins_11,sight_alsius_ir_ruins_4,sight_alsius_ir_ruins_5,sight_alsius_ir_ruins_6,sight_alsius_ir_ruins_7,sight_alsius_ir_ruins_8,sight_alsius_ir_myst_stone,sight_goblin_homes,sight_ignis_ol_1,sight_alsius_ir_ruins_2,sight_alsius_ir_boat_1,sight_alsius_ir_ruins_1,sight_alsius_ir_boat_2,sight_alsius_ir_boat_3,sight_alsius_ir_ship_1,sight_alsius_ir_ship_2,sight_alsius_ir_ship_3,sight_ignis_ol_2,sight_stonehenge,sight_syrtis_ol,sight_alsius_ol,sight_syrtis_ir_goblin,sight_alsius_graveyard,kalmar_ignis_ol,kalmar_alsius_liches,kalmar_alsius_ship,sight_alsius_ir_goblor_camp,sight_alsius_ir_fire_tower,sight_syrtis_efe_waterfall,sight_ignis_ruins_17,sight_alsius_ir_ruins_9,sight_alsius_ir_ruins_10,sight_ignis_sceletton,sight_syrtis_ruins_1,sight_syrtis_ruins_2,sight_syrtis_ruins_3,sight_syrtis_ruins_4,sight_syrtis_ruins_4_camp,sight_alsius_ir_mont_fountain,sight_syrtis_ruins_5,sight_syrtis_ruins_6,sight_syrtis_ruins_7,sight_syrtis_ruins_8,sight_syrtis_ruins_9,sight_syrtis_ruins_10,sight_syrtis_ruins_11,sight_syrtis_ruins_12,sight_syrtis_ruins_13,sight_ignis_ruins_1,sight_ignis_ruins_2,sight_ignis_ruins_3,sight_ignis_ruins_4,sight_alsius_ir_ruins_23,sight_ignis_ruins_14_camp,sight_ignis_ruins_5,sight_ignis_ruins_15,sight_ignis_ruins_16,sight_ignis_ruins_6,sight_ignis_ruins_7,sight_ignis_ruins_8,sight_ignis_ruins_9,sight_ignis_ruins_10,sight_ignis_ruins_11,sight_ignis_ruins_12,sight_ignis_ruins_14,sight_ignis_ruins_13,sight_syrtis_alga_waterfall,sight_ignis_windmill_1,sight_war_island,sight_ignis_windmill_2,sight_ignis_ruins_camp]);
 var lg_cities = L.layerGroup([fisgael,korsum,raeraia,dohsim,ulren_asir,ilreah,montsognir,rottersvall,hopstad,skolheim,gokstad,birka,gokstad,nasraah_tej,essadi,altaruk,meleketi,medenet,allahed]); 
-var lg_forts = L.layerGroup([syrtis_door,eferias,herbred,algaros,shaanarid,samal,menirah,imperia,aggersborg,trelleborg]); 
-var lg_npc = L.layerGroup([arena_syrtis,igna_myneely,melarak,dalmora,eric_vantassle,vermil_shadowborn,boltar,tenax_npc,tarsus,asgeir,dardanus_shadowhawk,sighild,alastor_npc,vesper_npc,vilcor,vania_vantassle_shadowborn,korbus,laranda_shadowhawk,malaguy]);
-var lg_crafting_bosses = L.layerGroup([nekhbit,mrotgor,bjarr,urrgog,kregog,kurgo,tokmo,delebon,gobgog,tenax,alastor,vesper,eadmar_bronzearm,lorvel,lulia,osthan,tuldor]);
-var lg_shops = L.layerGroup([shop_samal,shop_herbred,shop_aggers,shop_shaanarid,shop_menirah,shop_algaros,shop_eferias]);
+var lg_forts = L.layerGroup([alsius_door,ignis_door,syrtis_door,eferias,herbred,algaros,shaanarid,samal,menirah,alsius_door,imperia,aggersborg,trelleborg]); 
+var lg_npc = L.layerGroup([arena_syrtis,igna_myneely,melarak,dalmora,eric_vantassle,vermil_shadowborn,boltar,tenax_npc,tarsus,asgeir,dardanus_shadowhawk,sighild,alastor_npc,vesper_npc,vilcor,vania_vantassle_shadowborn,laranda_shadowhawk,malaguy]);
+var lg_crafting_bosses = L.layerGroup([lodlut,nekhbit,mrotgor,bjarr,urrgog,kregog,kurgo,tokmo,delebon,gobgog,tenax,alastor,vesper,eadmar_bronzearm,lorvel,lulia,osthan,tuldor]);
+var lg_shops = L.layerGroup([shop_imperia,shop_samal,shop_herbred,shop_aggers,shop_shaanarid,shop_menirah,shop_algaros,shop_eferias]);
 var lg_champions = L.layerGroup([soras,punzas,avalon,rizofag,sambro,satarco,yelamid,gohos,jidenah,graj,kontaron,thorburn,levias,olumor,gorlak,ades,asyr,daen_rha,evendim,thorkul]);
 var lg_super_bosses = L.layerGroup([daen_rha,evendim,thorkul]);
 var lg_telep = L.layerGroup([telep_imperia,telep_eferias,telep_bjarr,telep_shaanarid,mael,lia_rem,telep_korsum]);
