@@ -1,5 +1,5 @@
 <?php
-
+date_default_timezone_set('Europe/Berlin');
 header("Content-type: image/png");
 $image = imagecreatetruecolor(250, 20)
 or die("Cannot Initialize new GD image stream");
