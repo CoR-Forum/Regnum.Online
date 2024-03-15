@@ -1,3 +1,9 @@
+## After the Leaflet Update
+
+I recently updated Leaflet to 1.9.4.
+
+[mapkey icons](https://github.com/mapshakers/leaflet-mapkey-icon) are abandoned and need to be replaced.
+
 # How to contribute
 
 I stopped playing Regnum a few days after creating the initial version of this map, so a lot of community help is needed to keep it up.
